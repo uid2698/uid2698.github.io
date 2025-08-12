@@ -1,0 +1,51 @@
+/* 页面基础设置 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 容器 */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* 液态玻璃效果 */
+.liquid-glass {
+    background: rgba(255, 255, 255, 0.2); /* 透明背景 */
+    backdrop-filter: blur(10px); /* 背景模糊 */
+    border-radius: 15px; /* 圆角 */
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    transition: backdrop-filter 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 内容样式 */
+.liquid-glass h1 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.liquid-glass p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* 鼠标悬停时效果 */
+.liquid-glass:hover {
+    backdrop-filter: blur(15px); /* 增强模糊 */
+    transform: scale(1.05); /* 放大效果 */
+}
