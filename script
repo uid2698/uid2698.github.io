@@ -1,0 +1,16 @@
+// 获取液态玻璃元素
+const liquidGlass = document.getElementById('liquid-glass');
+
+// 鼠标悬停时增加动画效果
+liquidGlass.addEventListener('mouseenter', () => {
+    liquidGlass.style.transition = 'backdrop-filter 0.3s ease, transform 0.3s ease';
+    liquidGlass.style.backdropFilter = 'blur(15px)';
+    liquidGlass.style.transform = 'scale(1.05)';
+});
+
+// 鼠标离开时恢复原样
+liquidGlass.addEventListener('mouseleave', () => {
+    liquidGlass.style.transition = 'backdrop-filter 0.3s ease, transform 0.3s ease';
+    liquidGlass.style.backdropFilter = 'blur(10px)';
+    liquidGlass.style.transform = 'scale(1)';
+});
